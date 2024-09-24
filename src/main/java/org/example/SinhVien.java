@@ -3,8 +3,11 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class SinhVien {
-    private String Ma, Hoten, Lop, ngaySinh;
-    private double gpa;
+    protected String Ma;
+    private String Hoten;
+    private String Lop;
+    private String ngaySinh;
+    protected double gpa;
 
     public SinhVien() {
         this.Hoten = "";
@@ -19,6 +22,10 @@ public class SinhVien {
         this.ngaySinh = ngaySinh;
         this.Ma = Ma;
         this.Lop = Lop;
+    }
+
+    public String getLop() {
+        return Lop;
     }
 
     public String getMa() {
